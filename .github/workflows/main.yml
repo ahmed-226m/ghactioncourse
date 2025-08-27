@@ -10,3 +10,10 @@ jobs:
     steps:
       - name: Print a welcome message
         run: echo "Welcome to our first Github Actions Wrokflows!" 
+
+      - name: Checkout repository
+        uses: actions/checkout@latest
+
+      - name: List repository files
+        run : ls -la
+
