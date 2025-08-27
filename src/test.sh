@@ -3,7 +3,7 @@
 # Run the application
 EXPECTED="Hello, World!"
 
-OUTPUT=$(node -e "console.log(require('./app')('World'))")
+OUTPUT=$(node -e "console.log(require('./src/app')('World'))")
 
 if [ "$OUTPUT" == "$EXPECTED" ]; then
   echo "Test passed!"
@@ -12,4 +12,4 @@ else
   echo "Expected: $EXPECTED"
   echo "Got: $OUTPUT"
   exit 1  
-fi
+fi 
